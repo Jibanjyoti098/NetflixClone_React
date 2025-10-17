@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+
+*{
+  box-sizing: border-box;
+} 
+body{
+  background: black;
+  color: white;
+  /* font-family: "Poppins"; */
+}
