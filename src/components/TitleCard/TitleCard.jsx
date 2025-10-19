@@ -15,7 +15,7 @@ const TitleCard = ({title,category}) => {
   },[])
 
   return (
-    <div className='mt-[50px] mb-[30px]'> {/*Title cards */}
+    <div className='mt-[50px] mb-[30px]'> {/*//&Title cards */}
       <h2 className='mb-[8px]'>{title?title:"Popular on Netflix"}</h2>
 
       {/* //&card list */}
