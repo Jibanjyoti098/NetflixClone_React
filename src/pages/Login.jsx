@@ -36,7 +36,7 @@ const Login = () => {
             {/* //~New to netflix label*/}
             {/* //~signup label*/}
             <div className='mb-2'>
-              <label  className='font-bold'>New to Netflix?</label>
+              <label  className='font-bold'>New to Netflix? </label>
               <label className='font-bold text-white hover:underline cursor-pointer'>Sign up now.</label>
             </div>
           </div>

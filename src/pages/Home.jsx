@@ -9,9 +9,10 @@ import Footer from '../components/Footer/Footer'
 const Home = () => {
   return (
     <div>
-      <NavBar/>
+      {/* //*Navbar  */}
+      <NavBar/> 
      
-      {/* hero */}
+      {/* //&hero */}
       <div className='relative'> 
         <img src={hero_banner} alt="" className='w-full [mask-image:linear-gradient(to_left,black_5%,transparent)]'/>
         

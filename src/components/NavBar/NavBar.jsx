@@ -12,7 +12,7 @@ const NavBar = () => {
 
       {/* //&left */}
       <div className='flex justify-center gap-[50px]'>
-      <img src={logo} alt=""  className='w-[90px]' />
+      <img src={logo} alt=""  className='w-[150px]' />
       <ul className='flex gap-[20px]'>
           <li className='cursor-pointer'>Home</li>
           <li className='cursor-pointer'>TV Shows</li>
