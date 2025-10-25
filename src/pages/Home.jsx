@@ -36,10 +36,10 @@ const Home = () => {
 
       {/* //&random cards  */}
       <div className='pl-[6%]'>
-        <TitleCard title={"Blockbuster movies"}/>
-        <TitleCard title={"Only on Netflix"}/>
-        <TitleCard title={"Upcoming Movies"}/>
-        <TitleCard title={"Top picks for you"}/>
+        <TitleCard title={"Top picks for you"} category={"top_rated"}/>
+        <TitleCard title={"Only on Netflix"} category={"popular"}/>
+        <TitleCard title={"Upcoming Movies"} category={"upcoming"}/>
+        <TitleCard title={"Blockbuster movies"} category={"now_playing"}/>
       </div>
       <Footer/> {/*//*Footer*/}
     </div>
