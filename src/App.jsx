@@ -4,6 +4,7 @@ import Login from "./pages/Login"
 import { Routes, Route } from 'react-router-dom'
 import Register from './pages/Register'
 import LandingPage from './pages/LandingPage'
+import Player from './pages/Player'
 const App = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const App = () => {
         <Route path="/home" element={ <Home/>}/>
         <Route path="/login" element={ <Login/>}/>
         <Route path="/register" element={ <Register/>}/>
+        <Route path="/player/:id" element={<Player/>}/>
         
       </Routes>
      
