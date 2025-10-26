@@ -39,7 +39,7 @@ function TitleCard({ title, category }) {
 
         {apiData.map((card, index) => {
           return <Link to={`/player/${card.id}`} className="relative min-w-[250px]" key={index}>
-            <img src={`https://image.tmdb.org/t/p/w500` + card.backdrop_path} alt="" className='rounded-[4px] w-[240px] cursor-pointer' /> {/*//&Thumbnails*/}
+            <img src={`https://image.tmdb.org/t/p/w500`+card.backdrop_path} alt="" className='rounded-[4px] w-[240px] cursor-pointer hover:scale-125 transition delay-[130]' /> {/*//&Thumbnails*/}
             <p className='absolute bottom-[10px] right-[10px] no-underline text-white'>{card.original_title}</p> {/*//&Movies name*/}
           </Link>;
         })}

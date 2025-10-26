@@ -2,6 +2,7 @@ import React from 'react'
 import logo from "../assets/logo.png"
 import Footer from '../components/Footer/Footer'
 import TitleCard from '../components/TitleCard/TitleCard'
+import { Link } from 'react-router-dom'
 
 const LandingPage = () => {
   return (
@@ -19,7 +20,7 @@ const LandingPage = () => {
                 <option className='bg-white text-black' value="English">English</option>
                 <option className='bg-white text-black' value="Hindi">हिन्दी</option>
             </select>
-            <button type="button" className=' bg-[#e50916] hover:bg-[#c50916] rounded-md h-[30px] w-[80px] cursor-pointer'>Sign In</button>
+            <Link to={`./login`}><button type="button" className=' bg-[#e50916] hover:bg-[#c50916] rounded-md h-[30px] w-[80px] cursor-pointer'>Sign In</button></Link>
            </div>
         </div>
         </header>
@@ -38,7 +39,7 @@ const LandingPage = () => {
                 {/* //!button div */}
                 <div className='flex gap-2'>
                     <input type="text" className='bg-black/40 border-2 pl-4 rounded-sm w-[350px] border-gray-400' placeholder='Email address'/>
-                    <input type="button" value="Get Started >" className='bg-[#e50916] hover:bg-[#c50916] w-[150px] h-[55px] rounded-sm' />
+                    <Link to={`/register`}><input type="button" value="Get Started >" className='bg-[#e50916] hover:bg-[#c50916] w-[150px] h-[55px] rounded-sm' /></Link>
                 </div>
             </div>
       </main>
