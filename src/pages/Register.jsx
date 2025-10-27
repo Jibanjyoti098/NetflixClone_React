@@ -20,7 +20,9 @@ const Register = () => {
       await signup(email, password);
       toast.success("Account created successfully! Please login.");
       // ^Needs to apply comndition 
-      navigate("/login");
+       setTimeout(() => {
+        navigate("/login");
+      }, 1000);
     } catch (error) {
       if (error.code === 'auth/email-already-in-use') {
         toast.error("Email already registered. Please login.");

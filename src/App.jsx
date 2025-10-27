@@ -14,13 +14,10 @@ const App = () => {
   useEffect(() => {
     onAuthStateChanged(auth, async (user)=>{
       if (user){
-        navigate("/home")
-      }else{
-        navigate("/login")
       }
     })
   }, [])
-
+  
   return (
     <div>
       <Routes>
