@@ -5,6 +5,7 @@ import bell_icon from "../../assets/bell_icon.svg"
 import profile_img from "../../assets/profile_img.png"
 import caret_icon from "../../assets/caret_icon.svg"
 import { Link } from 'react-router-dom'
+import { logout } from '../../Firebase'
 
 const NavBar = () => {
 
@@ -52,7 +53,7 @@ const NavBar = () => {
 
           {/* //&dropdown */}
           <div className='dropdown absolute top-[100%] right-0 w-max bg-[#191919] px-[18px] py-[22px] rounded-[2px] z-[1] hidden group-hover/profile:block'>
-            <Link to={`/`}><p className='text-[13px] underline decoration-solid cursor-pointer'>Sign Out of Netflix</p></Link>
+            <Link to={`/`}><p onClick={logout()} className='text-[13px] underline decoration-solid cursor-pointer'>Sign Out of Netflix</p></Link>
           </div>
 
         </div>
